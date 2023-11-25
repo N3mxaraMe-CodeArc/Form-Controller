@@ -1,9 +1,9 @@
-import React from 'react'
+import React , { useState } from 'react'
 import FormExpernse from './components/FormExpernse';
 import FormDetailAppend from './components/FormDetailAppend';
 
 const App = () => {
-  const [formDataList, setFormDataList] = React.useState([]);
+  const [formDataList, setFormDataList] = useState([]);
 
   const handleFormSubmit = (formData) => {
     setFormDataList([...formDataList, formData]);

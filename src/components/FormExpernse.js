@@ -14,10 +14,7 @@ const FormExpernse = ({ onSubmit }) => {
 
       const formData = { name, amount, date, category };
       console.log(formData);
-
       setSummary("Data has been submitted");
-      console.log(name, amount, date, category)
-
       onSubmit(formData);
 
       setName("");
